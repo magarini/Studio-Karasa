@@ -1,75 +1,221 @@
-body{
-    display:flex;
-    flex-direction:column;
-    padding:0;
-    margin:0;
+@import url("https://fonts.googleapis.com/css2?family=Stack+Sans+Headline:wght@200..700&display=swap");
+
+body {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  color: #333;
+  font-family: "Stack Sans Headline", sans-serif;
 }
 
-nav{
-    display:flex;
-    flex-direction:row;
-    justify-content:space-between;
-    padding:24px 64px;
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 24px 64px;
+  position: sticky;
+  top: 0;
+  background-image: url("imgs/WaveIllustration.jpg");
+  background-size: cover;
+  background-position: top;
 }
 
-p{
-    max-width:600px;
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 24px;
 }
 
-.hero{
-    display:flex;
-    flex-direction:column;
-    padding:120px 64px;
-    min-height:calc(100vh - 66px);
-    background-color:#f5f5f5;
+h1 {
+  font-size: 96px;
+  margin: 0;
 }
 
-.mission{
-    display:flex;
-    flex-direction:column;
-    padding:120px 64px;
+h2 {
+  font-size: 64px;
+  margin: 0;
 }
 
-.values{
-    display:flex;
-    flex-direction:column;
-    padding:120px 64px;
-    background-color:#f5f5f5;
+h3 {
+  font-size: 32px;
+  margin: 0;
 }
 
-.renov-projects{
-    display:flex;
-    flex-direction:column;
-    padding:120px 64px;
+p {
+  max-width: 600px;
+  font-size: 24px;
+  margin: 0;
+  font-weight: 300;
 }
 
-.urban-projects{
-    display:flex;
-    flex-direction:column;
-    padding:120px 64px;
-    background-color:#f5f5f5;
+.projectPage nav,
+.aboutPage nav {
+  background-image: url("imgs/whitePaper.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
-.card-container{
-    display:flex;
-    flex-direction:row;
-    gap:24px;
-    margin-top:48px;
+.hero {
+  display: flex;
+  flex-direction: column;
+  padding: 120px 64px;
+  min-height: calc(100vh - 66px);
+  /* background-color: #f5f5f5; */
+  background-image: url("imgs/WaveIllustration.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
-footer{
-    display:flex;
-    flex-direction:row;
-    /* justify-content:space-between; */
-    padding:24px 64px;
+.mission {
+  display: flex;
+  flex-direction: column;
+  padding: 120px 64px;
+  gap: 64px;
+  background-image: url("imgs/recycled.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
-footer .col{
-    flex:1;
+.values {
+  display: flex;
+  flex-direction: column;
+  padding: 120px 64px;
+  background-image: url("imgs/whitePaper.jpg");
+  background-size: cover;
+  background-position: center;
+  gap: 64px;
 }
 
-.about{
-    display:flex;
-    flex-direction:column;
-    padding:120px 64px;
+.renov-projects {
+  display: flex;
+  flex-direction: column;
+  padding: 120px 64px;
+  gap: 64px;
+  background-image: url("imgs/recycled.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.urban-projects {
+  display: flex;
+  flex-direction: column;
+  padding: 120px 64px;
+  background-image: url("imgs/whitePaper.jpg");
+  background-size: cover;
+  background-position: center;
+  gap: 64px;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.value-card,
+.project-card {
+  gap: 16px;
+  background-color: #b9b9b9;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  /* justify-content:space-between; */
+  padding: 120px 64px;
+  gap: 48px;
+  background-image: url("imgs/brownPaper.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+footer .col {
+  flex: 1;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  padding: 120px 64px;
+  gap: 64px;
+  background-image: url("imgs/whitePaper.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.about-txt {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.projectHero {
+  display: flex;
+  flex-direction: column;
+  padding: 120px 64px;
+  gap: 64px;
+  background-image: url("imgs/whitePaper.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.projectImgs {
+  display: flex;
+  flex-direction: column;
+  padding: 64px;
+  gap: 24px;
+}
+
+.project2Imgs {
+  display: flex;
+  /* flex-direction: column; */
+  padding: 64px;
+  gap: 16px;
+}
+
+.project2Imgs .projectImg {
+  width: 50%;
+}
+
+.projectImg {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.projectImg img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  /* nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  } */
+
+  nav {
+    padding: 16px 32px;
+  }
+
+  .hero,
+  .mission,
+  .values,
+  .renov-projects,
+  .urban-projects,
+  .about {
+    padding: 64px 32px;
+  }
+
+  .card-container {
+    flex-direction: column;
+  }
+
+  footer {
+    flex-direction: column;
+    /* align-items: center; */
+  }
 }
