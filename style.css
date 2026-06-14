@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Stack+Sans+Headline:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 body {
   display: flex;
@@ -19,6 +20,7 @@ nav {
   background-image: url("imgs/WaveIllustration.jpg");
   background-size: cover;
   background-position: top;
+  z-index: 1000;
 }
 
 nav a {
@@ -42,15 +44,26 @@ h3 {
   margin: 0;
 }
 
-p {
-  max-width: 600px;
+p, li {
+  max-width: 800px;
   font-size: 24px;
   margin: 0;
-  font-weight: 300;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+}
+ul{
+  margin:0;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+  font-size: 24px;
+  font-family: "Inter", sans-serif;
 }
 
 .projectPage nav,
-.aboutPage nav {
+.aboutPage nav, .axPage nav {
   background-image: url("imgs/whitePaper.jpg");
   background-size: cover;
   background-position: center;
@@ -110,13 +123,27 @@ p {
 .card-container {
   display: flex;
   flex-direction: row;
-  gap: 24px;
+  gap: 48px;
 }
 
 .value-card,
 .project-card {
+  display: flex;
+  flex-direction: column;
   gap: 16px;
-  background-color: #b9b9b9;
+  flex: 1;
+  /* background-color: #b9b9b9; */
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+}
+
+.value-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
 }
 
 footer {
@@ -130,11 +157,27 @@ footer {
   background-position: center;
 }
 
-footer .col {
+.col {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap:8px;
+}
+.col-between {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 8px;
 }
 
-.about {
+.socials{
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  padding-top: 8px;
+}
+
+.about, .ax {
   display: flex;
   flex-direction: column;
   padding: 120px 64px;
@@ -144,8 +187,8 @@ footer .col {
   background-position: center;
 }
 
-.about-txt {
-  max-width: 600px;
+.about-txt, .ax-txt {
+  max-width: 800px;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -188,6 +231,17 @@ footer .col {
 .projectImg img {
   max-width: 100%;
   height: auto;
+  mix-blend-mode: multiply;
+}
+
+.axPage h2 {
+  font-size: 48px;
+
+}
+
+.ax-txt{
+  gap:24px;
+
 }
 
 @media (max-width: 768px) {
@@ -201,12 +255,36 @@ footer .col {
     padding: 16px 32px;
   }
 
+  nav a {
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
   .hero,
   .mission,
   .values,
   .renov-projects,
   .urban-projects,
-  .about {
+  .about,
+  footer,
+  .projectHero,
+  .projectImgs,
+  .project2Imgs {
     padding: 64px 32px;
   }
 
