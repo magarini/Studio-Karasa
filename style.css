@@ -44,15 +44,16 @@ h3 {
   margin: 0;
 }
 
-p, li {
+p,
+li {
   max-width: 800px;
   font-size: 24px;
   margin: 0;
   font-weight: 400;
   font-family: "Inter", sans-serif;
 }
-ul{
-  margin:0;
+ul {
+  margin: 0;
 }
 
 a {
@@ -63,7 +64,8 @@ a {
 }
 
 .projectPage nav,
-.aboutPage nav, .axPage nav {
+.aboutPage nav,
+.axPage nav {
   background-image: url("imgs/whitePaper.webp");
   background-size: cover;
   background-position: center;
@@ -161,7 +163,7 @@ footer {
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap:8px;
+  gap: 8px;
 }
 .col-between {
   display: flex;
@@ -170,14 +172,15 @@ footer {
   gap: 8px;
 }
 
-.socials{
+.socials {
   display: flex;
   flex-direction: row;
   gap: 8px;
   padding-top: 8px;
 }
 
-.about, .ax {
+.about,
+.ax {
   display: flex;
   flex-direction: column;
   padding: 120px 64px;
@@ -187,7 +190,8 @@ footer {
   background-position: center;
 }
 
-.about-txt, .ax-txt {
+.about-txt,
+.ax-txt {
   max-width: 800px;
   display: flex;
   flex-direction: column;
@@ -218,6 +222,24 @@ footer {
   gap: 16px;
 }
 
+.projectImgCol {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex: 1;
+  /* width: 50%; */
+}
+
+.projectImgGrid {
+  display: flex;
+}
+
+.projectImgGrid .projectImg {
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
 .project2Imgs .projectImg {
   width: 50%;
 }
@@ -236,12 +258,10 @@ footer {
 
 .axPage h2 {
   font-size: 48px;
-
 }
 
-.ax-txt{
-  gap:24px;
-
+.ax-txt {
+  gap: 24px;
 }
 
 @media (max-width: 768px) {
