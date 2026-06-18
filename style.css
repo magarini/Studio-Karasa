@@ -15,7 +15,7 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   padding: 24px 64px;
-  position: sticky; 
+  position: sticky;
   top: 0;
   /* background-image: url("imgs/WaveIllustration.webp");
   background-size: cover; */
@@ -107,7 +107,7 @@ a {
   background-position: center;
 }
 
-.mission p{
+.mission p {
   font-size: 32px;
   max-width: 1000px;
 }
@@ -305,7 +305,7 @@ footer {
 }
 
 .ax-txt {
-  gap: 24px;
+  gap: 64px;
 }
 
 @media (max-width: 768px) {
@@ -327,7 +327,8 @@ footer {
     font-size: 48px;
   }
 
-  h2, .axPage h2 {
+  h2,
+  .axPage h2 {
     font-size: 32px;
   }
 
@@ -336,7 +337,8 @@ footer {
   }
 
   p,
-  a, li {
+  a,
+  li {
     font-size: 18px;
   }
 
@@ -366,6 +368,4 @@ footer {
   .col {
     width: 100%;
   }
-
-  
 }
