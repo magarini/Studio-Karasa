@@ -174,16 +174,43 @@ a {
   gap: 16px;
 }
 
-footer {
+.row {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   /* justify-content:space-between; */
-  padding: 120px 64px;
+
   gap: 64px;
+}
+
+.dypa{
+  display:flex;
+  gap:16px;
+  /* justify-content: center; */
+  border-top:1px solid #333;
+  padding-top:48px;
+  align-items: center;
+}
+
+footer {
+  padding: 96px 64px 64px;
+  display: flex;
+  flex-direction: column;
   background-image: url("imgs/brownPaper.webp");
   background-size: cover;
   background-position: center;
+  gap:48px;
+}
+
+
+
+.dypa img{
+  height:64px;
+}
+
+.dypa p{
+  font-size:16px;
+  max-width:600px
 }
 
 .col {
@@ -340,6 +367,10 @@ footer {
   a,
   li {
     font-size: 18px;
+  }
+
+  .hero{
+    min-height:50vh;
   }
 
   .hero,
